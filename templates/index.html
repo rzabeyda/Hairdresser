@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Парикмахерская</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/langswitcher.css' %}">
+</head>
+<body>
+    <!-- Верхняя полоса -->
+    <header class="top-bar">
+        <div class="language-switcher">
+            <a href="?lang=ru">RU</a>
+            <a href="?lang=en">EN</a>
+            <a href="?lang=et">ET</a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Пока пусто, минимализм -->
+    </main>
+
+    <!-- Подключаем JS отдельно -->
+    <script src="{% static 'js/topbar.js' %}"></script>
+</body>
+</html>

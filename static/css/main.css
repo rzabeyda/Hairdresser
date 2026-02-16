@@ -1,0 +1,42 @@
+/* Основные стили сайта */
+body {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ссылки */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+/* Кнопки */
+button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+}
+
+/* Общие стили для текста и заголовков */
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    margin: 0;
+}
+
+p {
+    color: #fff;
+    margin: 0;
+}

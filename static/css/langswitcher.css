@@ -1,0 +1,17 @@
+.language-switcher a {
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.language-switcher a:hover {
+    background-color: #fff;
+    color: #000;
+}
