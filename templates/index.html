@@ -9,8 +9,15 @@
     <link rel="stylesheet" href="{% static 'css/langswitcher.css' %}">
 </head>
 <body>
-    <!-- Верхняя полоса -->
+    <!-- Верхняя фиксированная полоса -->
     <header class="top-bar">
+        <div class="contacts">
+            <span class="contact-item">Оксана</span>
+            <span class="contact-item">+37256912504</span>
+            <span class="contact-item">Linnamäe tee 25</span>
+            <span class="contact-item">Таллинн</span>
+            <span class="contact-item">13912</span>
+        </div>
         <div class="language-switcher">
             <a href="?lang=ru">RU</a>
             <a href="?lang=en">EN</a>
@@ -18,12 +25,11 @@
         </div>
     </header>
 
-    <!-- Основной контент -->
+    <!-- Основной контент сайта -->
     <main>
-        <!-- Пока пусто, минимализм -->
+        <!-- Контент пока пуст, минимализм -->
     </main>
 
-    <!-- Подключаем JS отдельно -->
     <script src="{% static 'js/topbar.js' %}"></script>
 </body>
 </html>
