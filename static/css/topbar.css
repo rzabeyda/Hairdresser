@@ -21,7 +21,9 @@
     gap: 20px;
     font-size: 0.9rem;
     color: #fff;
+    align-items: center;  /* выравниваем логотип и текст по вертикали */
 }
+
 
 .top-bar > .contacts span {
     white-space: nowrap;
@@ -48,4 +50,12 @@
 .language-switcher a:hover {
     background-color: #fff;
     color: #000;
+}
+
+/* Логотип */
+.logo {
+    height:60px;           /* маленький логотип */
+    width: auto;            /* сохраняем пропорции */
+    display: inline-block;  /* чтобы текст и картинка выравнивались одинаково */
+    vertical-align: middle; /* центрируем относительно текста */
 }
