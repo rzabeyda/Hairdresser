@@ -1,42 +1,55 @@
-/* Основные стили сайта */
+/* ==========================================
+   Основной контент сайта (main.css)
+   ========================================== */
 body {
-    background-color: #000 !important;
-    color: #fff !important;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
 }
 
-/* Ссылки */
-a {
-    color: #fff;
-    text-decoration: none;
+main {
+    padding: 80px 20px 20px 20px; /* отступ сверху, чтобы top-bar не перекрывал */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-a:hover {
-    color: #ccc;
+/* Пример секции услуг */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-/* Кнопки */
-button {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 8px 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #222;
-}
-
-/* Общие стили для текста и заголовков */
-h1, h2, h3, h4, h5, h6 {
-    color: #fff;
+.services ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-p {
-    color: #fff;
-    margin: 0;
+.services li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 150px;
+    text-align: center;
+}
+
+/* ==========================================
+   Адаптивность для мобильных устройств
+   ========================================== */
+@media (max-width: 768px) {
+    main {
+        padding: 100px 10px 10px 10px; /* немного больше сверху для top-bar */
+    }
+    .services {
+        flex-direction: column; /* блоки услуг идут вертикально */
+        gap: 10px;
+    }
+    .services li {
+        min-width: auto;        /* подстраиваем под ширину экрана */
+    }
 }

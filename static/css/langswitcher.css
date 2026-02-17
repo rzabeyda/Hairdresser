@@ -1,3 +1,11 @@
+/* ==========================================
+   Панель переключения языков (langswitcher.css)
+   ========================================== */
+.language-switcher {
+    display: flex;              /* кнопки идут в ряд */
+    align-items: center;
+}
+
 .language-switcher a {
     margin-left: 12px;
     font-weight: 500;
@@ -14,4 +22,20 @@
 .language-switcher a:hover {
     background-color: #fff;
     color: #000;
+}
+
+/* ==========================================
+   Адаптивность для мобильных устройств
+   ========================================== */
+@media (max-width: 768px) {
+    .language-switcher {
+        justify-content: center;  /* центрируем кнопки на маленьких экранах */
+        margin-top: 5px;
+        flex-wrap: wrap;          /* если кнопок много — переход на новую строку */
+    }
+    .language-switcher a {
+        margin: 5px;              /* уменьшаем отступы для компактности */
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
 }
